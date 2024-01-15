@@ -1,5 +1,6 @@
 import 'package:baby_monitor/functions/utils.dart';
 import 'package:baby_monitor/main.dart';
+import 'package:baby_monitor/widgets/forgot_password_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';

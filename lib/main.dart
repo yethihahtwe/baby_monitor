@@ -2,6 +2,7 @@ import 'package:baby_monitor/functions/utils.dart';
 import 'package:baby_monitor/widgets/auth_page.dart';
 import 'package:baby_monitor/widgets/home_page.dart';
 import 'package:baby_monitor/widgets/login_widget.dart';
+import 'package:baby_monitor/widgets/verify_email_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
@@ -58,7 +59,7 @@ class MainPage extends StatelessWidget {
             } else if (snapshot.hasError) {
               return Center(child: Text('Something went wrong!'));
             } else if (snapshot.hasData) {
-              return HomePage();
+              return VerifyEmailPage();
             } else {
               return AuthPage();
             }
